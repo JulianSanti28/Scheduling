@@ -583,7 +583,6 @@ int process_arrival(int now, priority_queue *queues, int nqueues) {
                            if(queues[i].ready->count == 0 || queues[i].ready->count == 1){
                               if(queues[i].ready->count == 1){
                                  process * p_ready_front = front(queues[i].ready);
-                                 printf("Proceso; %s Status: %s \n",p_ready_front->name,p_ready_front->is_execute == true? "HA SIDO EJECUTADO": "NO EJECUTANDO");
                                  if(p_ready_front->is_execute == true){
                                     push_back(queues[i].ready, p);
                                  }else{
@@ -595,7 +594,6 @@ int process_arrival(int now, priority_queue *queues, int nqueues) {
                            pop_front(queues[i].arrival);
                            }else{//Hay elementos en READY List > 1
                            process * p_ready_front = front(queues[i].ready);
-                           printf("Proceso; %s Status: %s \n",p_ready_front->name,p_ready_front->is_execute == true? "HA SIDO EJECUTADO": "NO EJECUTANDO");
                            pop_front(queues[i].arrival);
                            if(p_ready_front->is_execute == true){
                            insert_ordered(queues[i].ready, p, compare_execution_time,1);                               
