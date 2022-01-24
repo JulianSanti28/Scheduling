@@ -1,0 +1,21 @@
+#simulacion con una sola cola RR, q=5
+define queues 3
+define scheduling 1 RR
+define scheduling 2 SJF
+define scheduling 3 FIFO
+define quantum 1 5
+define quantum 2 4
+define quantum 3 6
+process a.txt 1
+process b.txt 2
+process c.txt 3
+process d.txt 1
+process e.txt 3
+process f.txt 1
+start
+
+
+
+
+
+
