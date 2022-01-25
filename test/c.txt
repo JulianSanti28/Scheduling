@@ -1,0 +1,7 @@
+#formato: begin ARRIVAL
+#           cpu TIME
+#         end
+
+begin 3
+cpu 6
+end

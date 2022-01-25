@@ -1,0 +1,20 @@
+# prueba con el parcial 
+#simulacion con tres colas cola RR, q=5
+define queues 3
+
+define scheduling 1 FIFO
+define scheduling 2 SJF
+define scheduling 3 RR
+
+define quantum 1 1
+define quantum 2 2
+define quantum 3 4
+
+process _a_2.txt 3
+process _b_2.txt 2
+process _c_2.txt 1
+process _d_2.txt 3
+process _e_2.txt 2
+process _f_2.txt 2
+process _g_2.txt 1
+start
